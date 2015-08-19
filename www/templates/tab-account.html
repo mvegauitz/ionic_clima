@@ -1,0 +1,71 @@
+<ion-view view-title="Configuracion">
+  <ion-content>
+  <div id="contenedor1">
+  <h3>Unidades</h3>
+	<div class="row" align="center">
+	  <div class="col">
+		<select ng-model="mySelect" ng-change="unidades(mySelect)">
+		  <option ng-selected="true">Metric</option>
+		  <option>Imperial</option>
+		  <option>Kelvin</option>
+		</select>
+	  </div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+	
+<div id="contenedor2">
+<h3>Ciudades</h3>
+	<div class="row" align="center">
+	  <div class="col">
+		<select ng-model="mySelect2" ng-change="ciudad(mySelect2)">
+		  <option ng-selected="true">Cancún</option>
+		  <option>Merida</option>
+		  <option>Veracruz</option>
+		  <option>China</option>
+		  <option>Francia</option>
+		  <option>Australia</option>
+		  <option>Brazil</option>
+		  <option>Ecuador</option>
+		  <option>Argentina</option>
+		  <option>Colombia</option>
+		  <option>Panama</option>
+		  <option>India</option>
+		  
+		</select>
+	  </div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+
+<div id="contenedor3">	
+<h3>Dias</h3>
+
+	<div class="row" align="center">
+	  <div class="col">
+		<select ng-model="mySelect3" ng-change="dias(mySelect3)">
+		  <option ng-selected="true">1</option>
+		  <option>2</option>
+		  <option>3</option>
+		  <option>4</option>
+		  <option>5</option>
+		  <option>6</option>		  
+		  <option>7</option>
+		
+		</select>
+	  </div>
+	</div>
+</div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,18 @@
+<ion-view view-title="Clima por Dias">
+  <ion-content>
+  <ion-refresher
+		pulling-text="Pull to refresh..."
+		on-refresh="doRefresh()">
+  </ion-refresher>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+		<div class="row">
+		  <div class="col">Fecha:<br><hr> {{chat.dt*1000 | date:'dd/MM/yy'}}</div>
+		  <div class="col">Temperatura:<br><hr>{{chat.temp.day}}</div>
+		  <div class="col">Temperatura Maxima:<br><hr>{{chat.temp.max}}</div>
+		  <div class="col">Temperatura Minima:<br><hr>{{chat.temp.min}}</div>
+		</div>
+	  </ion-item>
+	</ion-list>
+  </ion-content>
+</ion-view>

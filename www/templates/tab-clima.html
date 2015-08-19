@@ -1,0 +1,26 @@
+<ion-view view-title="Hoy">
+  <ion-content>
+  <ion-refresher
+		pulling-text="Pull to refresh..."
+		on-refresh="doRefresh()">
+  </ion-refresher>
+	<div class="row" align="center">
+	<img ng-src="http://openweathermap.org/img/w/{{icono}}.png">
+	</div>
+    <div class="row" align="center">
+	<h1>Ciudad: {{ciudad}}</h1>
+	</div>
+	<div class="row" align="center">
+	<h4>Humedad: {{humedad}}</h4>
+	</div>
+	<div class="row" align="center">
+	<h4>Temperatura: {{temparatura}}</h4>
+	</div>
+	<div class="row" align="center">
+	<h4>Temperatura minima: {{tempmin}}</h4>
+	</div>
+	<div class="row" align="center">
+	<h4>Temperatura maxima: {{tempmax}}</h4>
+	</div>
+  </ion-content>
+</ion-view>
